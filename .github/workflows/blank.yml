@@ -23,7 +23,7 @@ jobs:
           profile: minimal
           default: true
       - name: Build wheels - universal2
-        uses: messense/maturin-action@v1
+        uses: messense/maturin-action@main
         with:
           args: --release --universal2 --out dist --no-sdist
       - name: Upload wheels
@@ -31,8 +31,6 @@ jobs:
         with:
           name: wheels
           path: dist
-
-
 
   release:
     name: Release

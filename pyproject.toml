@@ -1,0 +1,8 @@
+[project]
+name = "congyu_pyo3_bug"
+version = "0.0.1"
+description = "High Performance Blockchain Deserializer"
+
+[build-system]
+requires = ["maturin>=0.11,<0.12"]
+build-backend = "maturin"
